@@ -32,6 +32,6 @@ int main()
 	printf("Product: %s\n", product_name);
 	printf("Price for each: %.2f%c\n", price, currency);
 	printf("Total: %.2f%c\n", total, currency);
-
+	printf("=== You have bought %hd %s/s for %.2f total ===\n", quantity, product_name, total);
 	return 0;
 }
