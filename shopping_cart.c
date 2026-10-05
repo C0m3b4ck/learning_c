@@ -12,6 +12,7 @@ int main()
 	// get user input
 	printf("Input product name: ");
 	fgets(product_name, sizeof(product_name), stdin);
+	//product_name[(product_name.size() - 1)] == '/0';
 	printf("Input price: ");
 	scanf("%f", &price);
 	printf("Input quantity: ");
@@ -21,8 +22,8 @@ int main()
 	
 	// output
 	printf("Product: %s\n", product_name);
-	printf("Price for each: %f%c\n", price, currency);
-	printf("Total: %f%c\n", total, currency);
+	printf("Price for each: %.2f%c\n", price, currency);
+	printf("Total: %.2f%c\n", total, currency);
 
 	return 0;
 }
