@@ -1,0 +1,6 @@
+/misc_not_c
+*.cpp
+*.py
+*.exe
+*.out
+*.a
