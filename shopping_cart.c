@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 
 int main()
 {
@@ -12,12 +13,19 @@ int main()
 	// get user input
 	printf("Input product name: ");
 	fgets(product_name, sizeof(product_name), stdin);
-	//product_name[(product_name.size() - 1)] == '/0';
+	product_name[strlen(product_name) - 1] = '\0';
+
 	printf("Input price: ");
 	scanf("%f", &price);
+
 	printf("Input quantity: ");
 	scanf("%hd", &quantity);
 
+	// a way to get a single char
+	//printf("Input currency: ");
+	//scanf("%c", &currency);
+
+	// calculate total
 	total += (price * quantity);
 	
 	// output
